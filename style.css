@@ -1,0 +1,364 @@
+
+
+/* Reset styles and set global font family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the main section */
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgimg.jpg); /* Background image with gradient overlay */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Styling for the header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the unordered list in the header */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Styling for list items */
+li {
+    margin: 0 15px;
+}
+
+/* Styling for anchor links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Styles for the active class */
+li a:active {
+    background-color: #000000;
+    color: #fff;
+    animation: blink 0.6s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Updated colors for specific links */
+li a[href='#'] {
+    color: gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000000;
+    transition: background-color 0.3s ease;
+}
+
+/* Updated styles for the other links */
+li a:not([href='#']) {
+    color: gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000000;
+    transition: background-color 0.3s ease;
+}
+
+/* Logo styling */
+.logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+/* Styling for content sections */
+.content {
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(0); /* Added initial position */
+    transition: transform 0.5s ease-in-out; /* Added sliding transition */
+}
+
+.content-hidden {
+    transform: translateX(100%); /* Slide content off-screen */
+}
+
+/* Styling for text boxes */
+.textBox {
+    max-width: 600px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Heading styles */
+h2 {
+    font-size: 2.5em;
+    margin-top: 70px;
+    color: #000000;
+}
+
+/* Paragraph styles */
+.textBox p {
+    color: gray;
+}
+
+/* Learn more button styles */
+a#learnMoreBtn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: gray;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a#learnMoreBtn:hover {
+    background-color: hsl(300, 10%, 60%);
+}
+
+/* Image box styling */
+.imgBox {
+    flex: 1;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+/* Image styling */
+.parlour-image {
+    max-width: 200%;
+    max-height: 450px;
+    height: auto;
+}
+
+/* Gallery container styling */
+.gallery-container {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+    margin-right: 100px;
+    overflow: hidden;
+    display: flex; /* Added display property */
+}
+
+/* Gallery image styling */
+.gallery-container img {
+    flex: 0 0 auto; /* Added flex property for responsiveness */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 15px; /* Added margin for gap between images */
+}
+
+.gallery-container img:last-child {
+    margin-right: 0; /* Remove right margin for the last image */
+}
+
+/* Paragraph styling within the gallery section */
+#gallery p {
+    font-size: 1em;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Paragraph and heading styles for services section */
+#services p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+#services h5 {
+    font-size: 1em;
+    margin-top: 50px;
+    color: #000000;
+}
+
+/* Heading styles for contact section */
+#contact h5 {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* Search section styles */
+#search {
+    text-align: center;
+    padding: 20px;
+}
+
+#search h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+#search p {
+    color: white;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+/* Academics section styles */
+#academics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Academics {
+    flex: 1;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.Academics img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.Academics h3 {
+    color: #000000;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.Academics p {
+    color: #ccc;
+    font-size: 1em;
+}
+
+/* Contact section list item styles */
+#contact li {
+    margin-bottom: 20px;
+}
+
+#contact li strong {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+#contact li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Contact icon styles */
+.contact-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Styles for the active class */
+li a:active {
+    background-color: #000000;
+    color: #fff;
+    animation: blink 0.6s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Styling for anchor links */
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease; /* Add transition property */
+}
+
+/* Styles for the active class */
+li a:active {
+    background-color: #000000;
+    color: #fff;
+    animation: blink 0.6s infinite; /* Add animation */
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+a:hover {
+    background-color: hsl(300, 10%, 60%);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    animation: slideInFromLeft 0.5s ease-in-out forwards; /* Apply animation to slide in from left */
+}
+
+
+.content:not(:first-child) {
+    display: none;
+}
